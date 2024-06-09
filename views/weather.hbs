@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="container-fluid main_menu">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="/">Weather</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Weather">Weather</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about">About us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid main_header">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-12 text-center">
+                <div class="main_content">
+                    <form action="" method="POST">
+                        <input type="text" placeholder="Enter your city name" id="city_name" class="form-control">
+                        <input type="submit" id="submit-btn" value="Search" class="btn btn-primary mt-3">
+                    </form>
+                </div>
+
+                <div class="layer mt-4 p-4 bg-light rounded shadow">
+                    <div class="top_layer">
+                        <p id="day" class="font-weight-bold"></p>
+                        <p id="today_date"></p>
+                    </div>
+
+                    <div class="middle_layer mt-4">
+                        <p id="city" class="h4"></p>
+                        <div class="down_layer d-flex justify-content-center align-items-center mt-3">
+                            <p id="temp" class="h1"><span>0</span><sup>°C</sup></p>
+                            <p id="temp_status" class="h1 ml-3"><i class="fa fa-cloud" aria-hidden="true"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 Weather App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
